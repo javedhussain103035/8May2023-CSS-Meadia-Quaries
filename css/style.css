@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'javedFont';
+    src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+}
+body{
+    margin: 0px;
+}
+header,footer{
+    width: 100%;
+    height: 100px;
+    font-family: javedFont, Verdana, Tahoma, sans-serif;
+    border: 2px dashed red;
+}
+main{
+    height: 1200px;
+    border: 2px dashed yellow;
+}
+footer{
+    height: 200px;
+}
+
+aside[data-leftaside="left"]{
+    width: 25%;
+    border: 1px dashed #000;
+    float: left;
+}
+section[data-sec="mysection"]{
+    width: 50%;
+    border: 1px dashed #000;
+    float: left;
+}
+
+aside[data-rightaside="right"]{
+    width: 24%;
+    border: 1px dashed #000;
+    float: left;
+}
+
+/* @media not|only mediatype and (expressions) {
+  CSS-Code;
+}*/
+
+@media only screen and (max-width:600px){
+    body{
+        background-color: red;
+    } 
+    aside[data-rightaside="right"]{
+        width: 23%;
+    }  
+}
+
+@media only screen and (min-width:601px){
+    body{
+        background-color: green;
+    }   
+}
